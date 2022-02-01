@@ -41,7 +41,12 @@ def create_app():
         if request.method == 'POST':
             form_data = request.form
             # Dataframe of form data to be used in prediction.
+            # Outputs a single row dataframe sample
             transformed_data = f.transform(form_data)
+            # In the future, prediction and chance
+            # will be calculated from the model.
+            # These are assigned in order to test the 
+            # database functionality.
             prediction = True
             chance = str(45.32343)
             qf.insert_table(transformed_data, prediction)
