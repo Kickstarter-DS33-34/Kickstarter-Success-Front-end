@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from os import getenv
-import functions as f
-import query_functions as qf
+import kickstarter.functions as f
+import kickstarter.query_functions as qf
 
 
 def create_app():
