@@ -1,7 +1,7 @@
 import psycopg2
 from os import getenv
 import pandas as pd
-from queries import create_prediction_table
+from kickstarter.queries import create_prediction_table
 
 DBNAME = getenv('DBNAME')
 USER = getenv('USER')
