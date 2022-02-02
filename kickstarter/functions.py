@@ -1,13 +1,28 @@
 import pandas as pd
+import tensorflow as tf
 
-# This function inputs a dictionary of
-# key-value pairs provided from the form
-# in the 'prediction' route of app.py.
-# It ouputs a dataframe to be used
-# in the final prediction function.
+
+# Function that inputs the form data from the
+# 'prediction.html' route and outputs a
+# dictionary of tensors usable by our model.
 def transform(data_dict):
+    # Create empty dictionary
     transformed_data = {}
     for key, value in data_dict.items():
-        transformed_data[key] = [value]
-    transformed_df = pd.DataFrame.from_dict(transformed_data)
-    return transformed_df
+        # If the dictionary key is project_name 
+        # or description, return the length of the input.
+        if key == 'project_name' or key =='description':
+            transformed_data[key] = [len(value)]
+        # If the dictionary key is launch_month, 
+        # days_of_campaign, or goal, convert the inputted
+        # string into an integer.
+        elif key == 'launch_month' or key == 'days_of_campaign' or key == 'goal':
+            transformed_data[key] = [int(value)]
+        # The rest are already integers so 
+        # just assign.
+        else:
+            transformed_data[key] = [value]
+    # Convert the dictionary values to tensors
+    input_dict = {name: tf.convert_to_tensor([value]) for name, value in transformed_data.items()}
+    
+    return input_dict

@@ -10,5 +10,5 @@ create_prediction_table = '''
         "currency" VARCHAR(10) NOT NULL,
         "duration" INT NOT NULL,
         "month" INT NOT NULL,
-        "prediction" BOOL NOT NULL);
+        "prediction" FLOAT NOT NULL);
 '''

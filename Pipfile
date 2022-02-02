@@ -12,6 +12,16 @@ dnspython = "*"
 python-decouple = "*"
 gunicorn = "*"
 python-dotenv = "*"
+transformers = "*"
+requests = "*"
+beautifulsoup4 = "*"
+numpy = "*"
+category-encoders = "*"
+tensorflow = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+keras = "*"
 
 [dev-packages]
 
