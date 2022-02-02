@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 dnspython = "*"
 python-decouple = "*"
 gunicorn = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

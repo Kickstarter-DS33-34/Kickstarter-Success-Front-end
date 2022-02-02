@@ -13,22 +13,7 @@ def create_app():
     def root():
         return render_template('index.html', title='tst title')
     
-    
-    @app.route("/landing.html", methods=['POST', 'GET'])
-    def landing():
-        return render_template('landing.html', title='landing')
-    
-    
-    @app.route("/generic.html", methods=['POST', 'GET'])
-    def generic():
-        return render_template('generic.html', title='generic')
-    
-        
-    @app.route("/elements.html")
-    def elements():
-        return render_template('elements.html', title='elements')
-    
-    
+
     @app.route("/prediction.html", methods=['POST', 'GET'])
     def prediction():
         return render_template('prediction.html', title='prediction')
@@ -49,7 +34,7 @@ def create_app():
             # database functionality.
             prediction = True
             chance = str(45.32343)
-            qf.insert_table(transformed_data, prediction)
+            #qf.insert_table(transformed_data, prediction)
             return render_template('data.html', form_data=form_data, prediction=prediction, chance=chance)
 
 
