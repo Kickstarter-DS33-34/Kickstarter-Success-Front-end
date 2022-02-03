@@ -1,5 +1,5 @@
 import pandas as pd
-# import tensorflow as tf
+import tensorflow as tf
 
 
 # Function that inputs the form data from the
@@ -23,6 +23,5 @@ def transform(data_dict):
         else:
             transformed_data[key] = [value]
     # Convert the dictionary values to tensors
-    # input_dict = {name: tf.convert_to_tensor([value]) for name, value in transformed_data.items()}
-    input_dict = transformed_data
+    input_dict = {name: tf.convert_to_tensor([value]) for name, value in transformed_data.items()}
     return input_dict

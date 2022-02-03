@@ -10,6 +10,7 @@ jinja2 = "*"
 pandas = "*"
 gunicorn = "*"
 numpy = "*"
+tensorflow = "*"
 
 [dev-packages]
 
