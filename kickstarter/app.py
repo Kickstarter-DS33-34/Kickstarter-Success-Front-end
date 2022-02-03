@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from os import getenv
 import kickstarter.functions as f
-# import kickstarter.query_functions as qf
+import kickstarter.query_functions as qf
 from kickstarter.model import MODEL
 
 
@@ -44,7 +44,7 @@ def create_app():
                 chance = prediction[0][0]
                 # Calling query_functions.py to insert
                 # the data into the PostgreSQL database.
-                # qf.insert_table(form_data, chance)
+                qf.insert_table(form_data, chance)
                 return render_template('data.html', form_data=form_data, chance=chance)
             except:
                 return f'Please be sure you are correctly formatting your inputs.'
