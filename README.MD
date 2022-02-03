@@ -12,11 +12,11 @@ Using NLP and / or regression techniques, Kickstarter Success can help predict h
 3.   A User would be able to see this probability and make adjustments to their campaign to increase their probability of success.
 
 
-***Heroku API***
+## ***Heroku API***
 
 Deployed URL: `http://kickstarter-ds3x.herokuapp.com/index.html
 
-***Technologies Used***
+## ***Technologies Used***
 
 
 1.   Clone this repository
@@ -43,7 +43,7 @@ Frontend was built using:
 `Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)`
 
 
-***Meet the Team***
+## ***Meet the Team***
 
 *Yefim Gorodnitskiy*
 *   Machine Learning Engineer
