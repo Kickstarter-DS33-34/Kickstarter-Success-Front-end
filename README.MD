@@ -59,7 +59,7 @@ Frontend was built using:
 *German Parra*
 *   Machine Learning Engineer
 *   Github: GermanParra
-*   Linkedin: https://www.linkedin.com/in/germanoparrads/
+*   Linkedin: https://www.linkedin.com/in/germanparrads/
 
 
 *Luke St Pierre*
