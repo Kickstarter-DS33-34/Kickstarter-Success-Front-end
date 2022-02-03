@@ -12,10 +12,11 @@ Using NLP and / or regression techniques, Kickstarter Success can help predict h
 3.   A User would be able to see this probability and make adjustments to their campaign to increase their probability of success.
 
 
-*Heroku API*
+***Heroku API***
+
 Deployed URL: `http://kickstarter-ds3x.herokuapp.com/index.html
 
-##*Technologies Used*
+***Technologies Used***
 
 
 1.   Clone this repository
@@ -23,7 +24,7 @@ Deployed URL: `http://kickstarter-ds3x.herokuapp.com/index.html
 3.   Install `Flask`
 4.   Run `CREATE APP=app.py flask run`
 
-Packages needed
+*Packages needed*
 
 *   psycopg2-binary
 *   flask
