@@ -7,7 +7,7 @@ Using NLP and / or regression techniques, Kickstarter Success can help predict h
 
 ## ✅  *MVP*
 
-1.   The model is able to take in Kickstarter information and descriptions to come up with that Kickstart's probability of success within it's time frame
+1.   The model is able to take in Kickstarter information and descriptions to come up with that Kickstart's probability of success within its time frame
 2.   Deploy model of user use in Heroku
 3.   A User would be able to see this probability and make adjustments to their campaign to increase their probability of success.
 
